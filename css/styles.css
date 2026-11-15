@@ -1,0 +1,498 @@
+
+/* =========================
+   VARIABLES Y CONFIGURACIÓN
+========================= */
+
+:root {
+    --color-primary: #83C5E5;
+    --color-primary-dark: #4C9FC5;
+    --color-secondary: #D9EFF9;
+    --color-light: #EFF8FC;
+    --color-white: #FFFFFF;
+    --color-text: #354F60;
+    --color-muted: #718795;
+
+    --font-title: 'DM Serif Display', serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background: var(--color-white);
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-title);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+p {
+    color: var(--color-muted);
+}
+
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 12px 0;
+    box-shadow: 0 2px 15px rgba(53, 79, 96, 0.07);
+}
+
+.navbar-brand {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+.navbar-brand:hover {
+    color: var(--color-primary-dark);
+}
+
+.navbar-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav-link {
+    color: var(--color-text);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--color-primary-dark);
+}
+
+.nav-contact {
+    background: var(--color-primary);
+    color: white;
+    padding: 9px 20px !important;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
+.nav-contact:hover {
+    background: var(--color-primary-dark);
+    color: white;
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+.hero {
+    background: var(--color-light);
+    padding: 145px 0 90px;
+    overflow: hidden;
+}
+
+.hero-content {
+    padding: 35px 35px 35px 12px;
+}
+
+.hero-subtitle,
+.section-subtitle {
+    color: var(--color-primary-dark);
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: clamp(3.2rem, 5.5vw, 5.5rem);
+    margin: 25px 0;
+    color: var(--color-text);
+}
+
+.hero h1 span {
+    color: var(--color-primary-dark);
+    display: block;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    max-width: 470px;
+    margin-bottom: 35px;
+}
+
+.hero-image-container {
+    position: relative;
+    padding: 20px 25px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    border-radius: 48% 48% 12px 12px;
+    box-shadow: 0 15px 40px rgba(53, 79, 96, 0.12);
+}
+
+.hero-decoration {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    background: white;
+    color: var(--color-primary-dark);
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 5px 20px rgba(53, 79, 96, 0.12);
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-custom {
+    display: inline-block;
+    background: var(--color-primary-dark);
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 2px solid var(--color-primary-dark);
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: transparent;
+    color: var(--color-primary-dark);
+    transform: translateY(-3px);
+}
+
+.btn-outline-custom {
+    display: inline-block;
+    border: 2px solid var(--color-primary-dark);
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.btn-outline-custom:hover {
+    background: var(--color-primary-dark);
+    color: white;
+}
+
+
+/* =========================
+   SECCIONES GENERALES
+========================= */
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-heading {
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    margin: 15px 0;
+}
+
+.section-heading p {
+    font-size: 0.9rem;
+}
+
+.about-content h2 {
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    margin: 20px 0;
+}
+
+.about-content p {
+    font-size: 0.92rem;
+    margin-bottom: 18px;
+}
+
+.about-image-container {
+    position: relative;
+    padding: 15px;
+    background: var(--color-secondary);
+    border-radius: 15px;
+}
+
+.about-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.text-link:hover {
+    color: var(--color-text);
+}
+
+
+/* =========================
+   CATÁLOGO
+========================= */
+
+.catalog-section {
+    background: var(--color-light);
+}
+
+.product-card {
+    height: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(53, 79, 96, 0.06);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(53, 79, 96, 0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+.product-info {
+    position: relative;
+    padding: 28px;
+}
+
+.product-number {
+    display: inline-block;
+    color: var(--color-primary-dark);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.product-info h3 {
+    font-size: 1.65rem;
+    margin-bottom: 12px;
+}
+
+.product-info p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   FRASE DECORATIVA
+========================= */
+
+.quote-section {
+    padding: 90px 20px;
+    background: var(--color-primary);
+    color: white;
+}
+
+.quote-section span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.quote-section h2 {
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    color: white;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.gallery-img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(53, 79, 96, 0.15);
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact-section {
+    background: var(--color-light);
+}
+
+.contact-section h2 {
+    max-width: 750px;
+    margin: 20px auto;
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: var(--color-text);
+    color: white;
+    padding: 35px 0;
+}
+
+.footer h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.footer p,
+.footer small {
+    color: #D7E8F0;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        padding: 15px 0;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .nav-contact {
+        display: inline-block;
+        margin: 8px 0;
+    }
+
+    .hero {
+        padding: 125px 0 65px;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        height: 400px;
+    }
+
+    .hero-decoration {
+        left: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .hero {
+        padding-top: 115px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-image {
+        height: 320px;
+    }
+
+    .hero-image-container {
+        padding: 10px;
+    }
+
+    .hero-decoration {
+        bottom: 25px;
+        font-size: 0.7rem;
+    }
+
+    .about-image {
+        height: 320px;
+    }
+
+    .product-card img {
+        height: 230px;
+    }
+
+    .gallery-img {
+        height: 190px;
+    }
+
+    .quote-section {
+        padding: 65px 20px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
